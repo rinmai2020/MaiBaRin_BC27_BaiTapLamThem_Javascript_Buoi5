@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài Tập JS Buổi 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Bài 3: Tính thuế thu nhập cá nhân -->
+          <div class="card" style="background-color: azure">
+            <div class="card-body">
+              <h1 class="mb-5">Bài 3:</h1>
+              <input
+                id="fullName2"
+                class="form-control my-3"
+                type="text"
+                placeholder="Nhập họ tên"
+              />
+              <input
+                id="tongThuNhapNam"
+                class="form-control my-3"
+                type="number"
+                placeholder="Tổng thụ nhập năm"
+              />
+              <input
+                id="nguoiPhuThuoc"
+                class="form-control"
+                type="number"
+                placeholder="Số người phụ thuộc"
+              />
+              <div class="col-md-12 mt-4">
+                <button class="btn btn-info d-block w-25" onclick="baiTap3()">
+                  Tính tiền thuế
+                </button>
+                <p id="result3" class="mt-3 bg-info" style="display: none"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Bài 4: Tính tiền cáp -->
+          <div class="card" style="background-color: azure">
+            <div class="card-body">
+              <h1 class="mb-5">Bài 4:</h1>
+              <select
+                id="loaiKH"
+                class="form-select d-inline"
+                onchange="onChangeKeNoi()"
+              >
+                <option value="">Chọn loại khác hàng</option>
+                <option value="nhaDan">Nhà Dân</option>
+                <option value="doanhNghiep">Doanh Nghiệp</option>
+              </select>
+              <input
+                id="maKH"
+                class="form-control my-3"
+                type="number"
+                placeholder="Nhập mã khác hàng"
+              />
+              <input
+                id="kenh"
+                class="form-control my-3"
+                type="number"
+                placeholder="Số kênh cao cấp"
+              />
+              <input
+                id="soKetNoi"
+                class="form-control"
+                type="number"
+                style="display: none"
+                placeholder="Số kết nối"
+              />
+              <div class="col-md-12 mt-4">
+                <button class="btn btn-info w-25" onclick="cableMoney()">
+                  Tính tiền cáp
+                </button>
+                <p id="result4" class="mt-3 bg-info" style="display: none"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link javascript -->
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+    <script src="./js/bai3.js"></script>
+    <script src="./js/bai4.js"></script>
+  </body>
+</html>
